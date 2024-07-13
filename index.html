@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="/output.css" />
+    <link rel="stylesheet" href="/src/product-cards.css" />
+    <link rel="stylesheet" href="/src/wishlist.css" />
+  </head>
+  <body>
+    <h2 class="heading text-lg text-black font-semibold mx-auto my-5">
+      Our products
+    </h2>
+    <div class="product-cards-container js-product-cards-container"></div>
+    <div class="wishlist__container closed">
+      <div class="wishlist__top">
+        <div class="wishlist__heading-count">
+          <h2 class="text-2xl text-gray-900 font-semibold">Knoll</h2>
+          <span class="wishlist-count ml-2 w-6 h-6 text-center"></span>
+        </div>
+        <div class="wishlist-icon w-5 h-5 mr-3">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_239_74)">
+              <path
+                d="M19.8059 5.17576C19.2781 3.17138 17.7249 1.59171 15.7551 1.05497C13.8254 0.531469 11.7754 1.06312 10.0099 2.51853C8.72208 1.4481 7.29504 0.868588 5.83796 0.833959C4.2547 0.811552 2.7776 1.40126 1.66401 2.53279C-0.429979 4.66244 -0.88663 8.50824 2.2899 11.7389L9.2999 18.8683C9.49518 19.0669 9.75154 19.1667 10.0079 19.1667C10.2643 19.1667 10.5206 19.0669 10.7159 18.8683L17.7259 11.7389C19.6346 9.79764 20.3927 7.40522 19.8059 5.17576Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_239_74">
+                <rect width="20" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="wishlist__content"></div>
+    </div>
+    <script type="module" src="/javascript/index.js"></script>
+  </body>
+</html>
