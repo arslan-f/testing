@@ -42,7 +42,7 @@ const productCardMaker = (productData) => {
   productCard.innerHTML = `
     <div class="product-card__image-container">
       ${tagsHTML}
-      <img src="../${defaultImage}" alt="${productData.title}"/>
+      <img src="${defaultImage}" alt="${productData.title}"/>
     </div>
     <div class="product-card__details">
       <h4 class="product-card__title">${productData.title}</h4>
@@ -100,7 +100,7 @@ const productCardMaker = (productData) => {
       variant.classList.add("selected");
 
       const selectedVariant = productData.variants[index];
-      productCard.querySelector("img").src = `../${selectedVariant.image}`;
+      productCard.querySelector("img").src = `${selectedVariant.image}`;
 
       const selectedPrice = selectedVariant.price;
       const selectedReducedPrice = selectedVariant.reducedPrice;
