@@ -52,9 +52,12 @@ const wishlistFunction = () => {
       const title = productCard.querySelector(
         ".product-card__title"
       ).textContent;
-      const image = productCard.querySelector(
-        ".product-card__image-container img"
-      ).src;
+      const image =
+        "images" +
+        productCard
+          .querySelector(".product-card__image-container img")
+          .src.split("images")[1];
+
       // Extract the active price (discounted price if available or normal price)
       let priceElement = productCard.querySelector(".reduced-price");
       if (!priceElement) {
@@ -69,6 +72,7 @@ const wishlistFunction = () => {
 
       const productData = { title, image, price, label };
 
+      console.log("product data " + productData.image);
       addToWishlist(productData);
     }
   });
